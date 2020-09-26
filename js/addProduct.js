@@ -1,3 +1,3 @@
-const addProduct = (product) => {
-  console.log("tranduoc2  add product");
+const addProduct = () => {
+  console.log("add  product 1");
 };
