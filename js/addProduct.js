@@ -18,3 +18,6 @@ const addProduct7 = () => {
 const addProduct5 = () => {
   console.log("add  product 5");
 };
+const addProduct6 = () => {
+  console.log("add  product 6");
+};
