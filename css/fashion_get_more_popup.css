@@ -1,0 +1,129 @@
+*, *::after,*::before {
+  box-sizing: border-box;
+}
+
+.modal_get {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  position: fixed;
+  top:0;
+  left:10%;
+  transform: translateY(-100%) ;
+  opacity: 0;
+  border: 1px solid gray ;
+  background-color: white;
+  z-index: 100;
+  transition: all .7s linear;
+}
+/* class dinh lien the hien su cung cap, tuc la chung cung ton tai trong 1 the */
+.modal_get.active {
+  transform: translateY(0) ;
+  opacity: 1;
+}
+
+
+.header__get__popup {
+  height: 5rem;
+  font-size: 2.6em;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  background: #00cdce;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__get__popup .title {
+
+  position: absolute;
+  left: 40%;
+  color: orange;
+  font-size: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.header__get__popup .close-button-get {
+
+  position: absolute;
+  right: 0.3rem;
+  font-size: 1.5em;
+  color: #a0260f;
+  outline: none;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+.header__get__popup .close-button-get:hover {
+  color: black;
+  opacity: 0.7;
+}
+.modal-get-body {
+  padding: 1.5rem;
+
+}
+.modal-get-body img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.modal-get-body p {
+  text-align: center;
+  font-size: 10px;
+  color: #999;
+  padding: 2em 2em 1em;
+  margin: 0 !important;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+#overlay_get {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0 ,.5);
+  pointer-events: none;
+  transition: all .7s linear;
+}
+
+#overlay_get.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+@media(min-width:767px) {
+  .modal_get {
+    max-width: 600px;
+    height: auto;
+    left: 12%;
+  }
+  .modal-get-body p {
+    font-size: 12px;
+  }
+}
+@media(min-width:991px) {
+  .modal_get {
+    left: 20%;
+  }
+  .modal-get-body p {
+    font-size: 12px;
+  }
+}
+@media(min-width:1080px) {
+  .modal_get {
+    left: 30%;
+  }
+}
