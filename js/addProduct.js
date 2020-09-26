@@ -4,3 +4,7 @@ const addProduct = () => {
 const addProduct2 = () => {
   console.log("add  product 1");
 };
+
+const addProduct7 = () => {
+  console.log("add  product 7");
+};
