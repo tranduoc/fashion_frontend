@@ -15,7 +15,9 @@ const addProduct4 = () => {
 const addProduct7 = () => {
   console.log("add  product 7");
 };
-
 const addProduct5 = () => {
-  console.log("add  product 55");
+  console.log("add  product 5");
+};
+const addProduct6 = () => {
+  console.log("add  product 6");
 };
